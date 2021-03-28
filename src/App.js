@@ -20,13 +20,16 @@ class App extends Component {
   DownCount = () => {
     this.setState({ count: this.state.count - 1 });
   };
-
+  ResetCount = () => {
+    this.setState({ count: (this.state.count = 0) });
+  };
   render() {
     return (
       <Counter
         {...this.state}
         UpCount={this.UpCount}
         DownCount={this.DownCount}
+        ResetCount={this.ResetCount}
       />
     );
   }

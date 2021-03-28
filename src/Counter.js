@@ -8,6 +8,7 @@ const Counter = (props) => {
       <h1>{props.count}</h1>
       <button onClick={() => props.UpCount()}>UP</button>
       <button onClick={() => props.DownCount()}>Down</button>
+      <button onClick={() => props.ResetCount()}>RESET</button>
     </div>
   );
 };
