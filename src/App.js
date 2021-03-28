@@ -12,8 +12,13 @@ class App extends Component {
       count: 0,
     };
   }
+
+  UpCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
   render() {
-    return <Counter {...this.state} />;
+    return <Counter {...this.state} UpCount={this.UpCount} />;
   }
 }
 
