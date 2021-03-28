@@ -7,7 +7,7 @@ const Counter = (props) => {
     <div style={{ margin: "0", textAlign: "center" }}>
       <h1>{props.count}</h1>
       <button onClick={() => props.UpCount()}>UP</button>
-      <button>Down</button>
+      <button onClick={() => props.DownCount()}>Down</button>
     </div>
   );
 };
