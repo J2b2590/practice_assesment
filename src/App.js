@@ -13,7 +13,7 @@ class App extends Component {
     };
   }
   render() {
-    return <Counter />;
+    return <Counter {...this.state} />;
   }
 }
 
